@@ -1,0 +1,1319 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.</title>
+  <meta name="title" content="Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'assets/images/logo_.svg'%}" width="129" height="40" alt="Blogy logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover:underline" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#featuredpost" class="navbar-link hover:underline" data-nav-link>Featured Post</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recentpost" class="navbar-link hover:underline" data-nav-link>Recent Post</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recommendedpost" class="navbar-link hover:underline" data-nav-link>Recommended Post</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#subscribe" class="navbar-link hover:underline" data-nav-link>Subscribe</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Search</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="#" class="btn">Join</a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BAR
+  -->
+
+  <div class="search-bar" data-search-bar>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Search" class="input-field">
+
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <p class="search-bar-text">Please enter at least 3 characters</p>
+
+  </div>
+
+  <div class="overlay" data-overlay data-search-toggler></div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <strong class="strong">Hey, we’re Blogy.</strong> See our thoughts, stories and ideas.
+          </h1>
+
+          <div class="wrapper">
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Your email address" class="email-field">
+
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+
+            <p class="newsletter-text">
+              Get the email newsletter and unlock access to members-only content and updates
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section featured" id="featuredpost" aria-label="featured post">
+        <div class="container">
+
+          <p class="section-subtitle">
+            Get started with our <strong class="strong">best stories</strong>
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-1.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="New technology is not good or evil in and of itself" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-1.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-2.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Design</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Review</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                     New technology is not good or evil in itself. It's all about how people choose to use it. 
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Technology is considered a new era without fixed rules where 'perfection is related to the final product,' yet its essence still depends on how it serves human needs.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-2.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="It’s a new era in design, there are no rules" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Creative</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Product</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      It’s a new era in design, there are no rules.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Tren maximalist blog design, throwing away rigid minimalism rules for raw and authentic self-expression.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-3.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="Perfection has to do with the end product" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-4.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Design</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Creative</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Perfection has to do with the end product.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Using pre-made layouts like those from Elegant Themes can help bridge the gap between a messy creative process and a professional-looking final result.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-4.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="Everyone has a different life story" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-2.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">People</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Story</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Everyone has a different life story.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Stories go beyond facts, triggering emotions and helping audiens connect with the blogger personally.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-5.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="The difference is quality" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-6.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Design</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Lifestyle</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      The difference is quality.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Focus on the depth of the material, providing general information but also offering specific solutions, data, or unique perspectives that 'change lives' or provide real value to the reader.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="{% static 'assets/images/featured-6.jpg'%}" width="500" height="600" loading="lazy"
+                    alt="Problems are not stop signs, they are guidelines" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Creating</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Problems are not stop signs, they are guidelines.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Suggests that obstacles, setbacks, and challenges in life and creative projects should not be viewed as reasons to halt, but rather as directional signals that offer insight into how to proceed or improve.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent" id="recentpost" aria-label="recent post">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 section-title">
+              See what we’ve <strong class="strong">written lately</strong>
+            </h2>
+
+            <div class="top-author">
+              <ul class="avatar-list">
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="{% static 'assets/images/author-1.jpg'%}" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="{% static 'assets/images/author-2.jpg'%}" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="{% static 'assets/images/author-4.jpg'%}" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" alt="top author" class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+              <span class="span">Meet our top authors</span>
+            </div>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-1.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="Creating is a privilege but it’s also a gift" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Lifestyle</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">People</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Review</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Creating is a privilege but it’s also a gift.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Focus on an authentic narrative. Profiling or interviews give life to your blog. Tell the human side that is rarely seen. And honesty is the main currency, as well as provide balanced reviews (strengths and weaknesses).
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-2.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="Being unique is better than being perfect" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Design</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Product</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Being unique is better than being perfect.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Designs that have a few imperfections feel more real and relatable for users compared to designs that are too rigid and "perfect". Features and strategies can be imitated, but the unique vision, story, and energy behind a product cannot be cloned.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-3.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="Now we’re getting somewhere" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-2.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-1.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Idea</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Product</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Review</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Now we’re getting somewhere.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Don't just show the product; show the "vibe." Pair glasses with specific outfits like "The Professional" or "The Weekend Adventurer". And use virtual credit/debit cards or digital wallets (Apple Pay/Google Pay) to mask your actual card number during checkout.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-4.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="The trick to getting more done is to have the freedom to roam around" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">Lifestyle</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Design</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      The trick to getting more done is to have the freedom to roam around.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-5.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="Every day, in every city and town across the country" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-1.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-6.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">People</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Story</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Lifestyle</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Every day, in every city and town across the country.
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Actively highlighting youth lifestyle trends and viral stories happening in various cities. And presenting a variety of lifestyle channels and stories from various regions through its network of local contributors.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="{% static 'assets/images/recent-6.jpg'%}" width="550" height="660" loading="lazy"
+                    alt="Your voice, your mind, your story, your vision" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-6.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li>
+                      <a href="#" class="card-tag">People</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Review</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="card-tag">Story</a>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">
+                      Your voice, your mind, your story, your vision
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    My Voice is Adaptive and collaborative, My thoughts are based on data patterns and language logic, My story explains the story behind a custom painting portrait and My vision is to be a bridge between information and inspiration.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn">Load more</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECOMMENDED POST
+      -->
+
+      <section class="section recommended" id="recommendedpost" aria-label="recommended post">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <strong class="strong">Recommended</strong>
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-1.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="The trick to getting more done is to have the freedom to roam around " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-5.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-2.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      The trick to getting more done is to have the freedom to roam around
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-2.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="Every day, in every city and town across the country " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      Every day, in every city and town across the country
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-3.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="I work best when my space is filled with inspiration " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-1.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      I work best when my space is filled with inspiration
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-4.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="I have my own definition of minimalism " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-4.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      I have my own definition of minimalism
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-5.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="Change your look and your attitude " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-6.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      Change your look and your attitude
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="{% static 'assets/images/recommended-6.jpg'%}" width="300" height="360" loading="lazy"
+                    alt="The difference is quality " class="img-cover">
+
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="{% static 'assets/images/author-3.jpg'%}" width="100" height="100" loading="lazy" alt="Author"
+                          class="img-cover">
+                      </a>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h5">
+                    <a href="#" class="card-title hover:underline">
+                      The difference is quality
+                    </a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter">
+
+        <h2 class="h2 section-title">
+          Subscribe to <strong class="strong">new posts</strong>
+        </h2>
+
+        <form action="" class="newsletter-form">
+          <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="subscribe" >
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'assets/images/logo_.svg'%}" width="129" height="40" alt="Blogy logo">
+          </a>
+
+          <p class="footer-text">
+            A minimal, functional theme for running a paid-membership publication on Blogy.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Social</p>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Facebook</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Twitter / X</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-pinterest"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Pinterest</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="logo-vimeo"></ion-icon>
+
+            <a href="#" class="footer-link hover:underline">Vimeo</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">About</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Style Guide</a>
+          </li>
+
+          <li>
+            <a href="#featurespost" class="footer-link hover:underline">Features</a>
+          </li>
+
+          <li>
+            <a href="#recentpost" class="footer-link hover:underline">Recent Post</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Features</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Upcoming Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Blog & News</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Features</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">FAQ Question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Testimonial</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h5">Membership</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Account</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Membership</a>
+          </li>
+
+          <li>
+            <a href="#subscribe" class="footer-link hover:underline">Subscribe</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Tags</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link hover:underline">Authors</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="section footer-bottom">
+
+        <p class="copyright">
+          &copy; 2026 Blogy. All rights reserved. 
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'js/script.js'%}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
